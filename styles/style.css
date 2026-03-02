@@ -1,0 +1,1687 @@
+@charset "utf-8";
+@import url("../resources/Open_Sans/OpenSans-Regular.ttf");
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+
+html, body {
+    font-family: 'Noto Sans', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* HEADER - Fondo semitransparente fijo */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 50px;
+    background-color: rgba(59, 64, 70, 0.8); /* Negro semitransparente */
+    z-index: 2000;
+}
+
+/* Logo */
+.logo h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.logo b {
+  color: #00bcd4; /* Azul claro para la letra "e" */
+}
+
+/* Navegación */
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.nav a:hover {
+    color: #00bcd4;
+    outline: 2px solid #00bcd4;
+    transition: 1s;
+}
+
+/* SECCIÓN HERO */
+.container {
+    position: relative;
+    height: 100vh;
+    background: url('../Assets/images/Fondo.png') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    padding-top: 80px; /* Espacio para el header fijo */
+}
+
+/* Texto del hero */
+.fondo {
+    position: relative;
+    z-index: 2;
+    color: white;
+    margin: 10px 0;
+}
+
+.fondo h1 {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo negro semitransparente para el texto */
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+.gal1 {
+    display: grid;
+    background-color: #00bcd4;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 100%);
+    color: #fff;
+    height: 80vh;
+    padding: 20px 190px;
+    gap: 40px;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+}
+
+.photo h2 {
+    font-weight: lighter;
+    font-size: 28px;
+}
+
+.photo p {
+    font-size: 14px;
+}
+
+.header2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.header3 .logo h1 {
+    font-size: 29px;
+    font-weight: 300;
+    color: #60616e;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;  
+}
+
+.header3 .logo h1::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 70px; /* Ancho de la línea */
+    height: 3px; /* Grosor de la línea */
+    background-color: #60616e; /* Color de la línea */
+}
+
+.header3 .nav a {
+    color: #60616e;
+}
+
+.gall2 {
+    margin: 25px 180px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gall2 img {
+    width: 100%;        /* Ocupa todo el ancho de su celda */
+    height: 220px;       /* Altura fija para todas */
+    object-fit: cover;   /* recorta la imagen para que llene el espacio sin deformarse */
+    border-radius: 5px;  /* Opcional: esquinas redondeadas */
+}
+
+.video_ {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #60616e;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 20px;
+    margin-left: 170px;
+    gap: 20px;
+}
+
+.content h1 {
+    font-size: 29px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative; 
+}
+
+.content h1::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 70px; /* Ancho de la línea */
+    height: 3px; /* Grosor de la línea */
+    background-color: #fff; /* Color de la línea */
+}
+
+.content p {
+    font-size: 12px;
+    color: #fff;
+    width: 100%;
+    max-width: 600px;
+}
+
+.video {
+    padding: 40px 60px;
+    margin: 20px 130px;
+    width: 45%;
+    height: 100%;
+}
+
+.content .button {
+    background-color: #60616e;
+    width: 50%;
+    color: #000;
+    border: #000 solid 2px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content .button:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.twitter {
+    background-color: #00bcd4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.twitter .mini {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 30px 195px;
+}
+
+.twitter .mini h1 {
+    font-size: 29px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative; 
+}
+
+.twitter .mini h1::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 70px; /* Ancho de la línea */
+    height: 3px; /* Grosor de la línea */
+    background-color: #fff; /* Color de la línea */
+}
+
+.twitter .mini img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.twitter p {
+    font-size: 19px;
+    color: #fff;
+    width: 100%;
+    padding: 0px 195px;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+
+.grid2 {
+    background-image: url('../Assets/images/bg_whoIs.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+.grid2 .John {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px 200px;
+    gap: 10px;
+}
+
+.grid2 .John h1 {
+    font-size: 29px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative; 
+}
+
+.grid2 .John h1::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 70px; /* Ancho de la línea */
+    height: 3px; /* Grosor de la línea */
+    background-color: #fff; /* Color de la línea */
+}
+
+.grid2 .John p {
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+}
+
+.grid2 .John .J {
+    margin-top: 120px;
+}
+
+.grid2 .John2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 70px 200px;
+    gap: 10px;
+}
+
+.grid2 .John2 p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 50px;
+    width: 90%;
+}
+
+.gall3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gall3 a:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.comillas {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.comillas .mini {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 30px 195px;
+}
+
+.comillas .mini h1 {
+    font-size: 29px;
+    font-weight: 300;
+    color: #60616e;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative; 
+}
+
+.comillas .mini h1::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 70px; /* Ancho de la línea */
+    height: 3px; /* Grosor de la línea */
+    background-color: #60616e; /* Color de la línea */
+}
+
+.comillas .mini img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.comillas p {
+    font-size: 19px;
+    color: #60616e;
+    width: 100%;
+    padding: 0px 195px;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+
+.comillas .cita {
+    font-size: 15px;
+    color: #00bcd4;
+    font-weight: bolder;
+}
+
+.forms {
+    background-image: url('../Assets/images/bg_contact.png');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0; /* Espaciado superior e inferior */
+    position: relative;
+    color: white;
+}
+
+.forms h1 {
+    font-size: 32px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0px 40px 40px 0px;
+    position: relative;
+    display: inline-block;
+}
+
+.forms h1::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 70px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.forms .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 180px;
+    padding: 0 20px;
+}
+
+/* Estilos del formulario */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-container h1 {
+    margin-left: 200px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #00bcd4; /* Azul turquesa al hacer focus */
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+    margin-bottom: 40px;
+}
+
+/* Columna derecha - información */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 25px;
+    margin-left: 330px;
+    width: 100%; /* Alinear con los inputs */
+}
+
+.contact-info p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.contact-info p:first-child {
+    margin-bottom: 10px;
+}
+
+.contact-info p:last-child {
+    font-style: normal;
+    line-height: 2;
+}
+
+/* Botón MESSAGE */
+.forms .btn {
+    background: #00bcd4;
+    color: white;
+    padding: 20px 40px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 200px; /* Misma alineación que el título */
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.forms .btn:hover {
+    background: white;
+    color: #003366;
+    border-color: white;
+}
+
+.footer {
+    background-color: #60616e;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 31px;
+}
+
+.footer a {
+    color: #b5b6c2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #00bcd4;
+    outline: 2px solid #00bcd4;
+    transition: 1s;
+}
+
+.footer .dosmil {
+    color: #b5b6c2;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 1281px) {
+    .header {
+        padding: 35px 80px;
+    }
+    
+    .header .logo h2 {
+        font-size: 32px;
+    }
+    
+    .nav a {
+        font-size: 18px;
+        margin-left: 40px;
+        padding: 8px 15px;
+    }
+    
+    .fondo h1 {
+        font-size: 48px;
+        padding: 20px 40px;
+    }
+    
+    .gal1 {
+        padding: 40px 250px;
+        gap: 60px;
+        height: auto;
+        min-height: 60vh;
+    }
+    
+    .photo h2 {
+        font-size: 36px;
+    }
+    
+    .photo p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    
+    .photo img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .header3 {
+        padding: 40px 80px;
+    }
+    
+    .header3 .logo h1 {
+        font-size: 38px;
+    }
+    
+    .header3 .nav a {
+        font-size: 18px;
+    }
+    
+    .gall2 {
+        margin: 40px 200px;
+        gap: 30px;
+    }
+    
+    .gall2 img {
+        height: 260px;
+    }
+    
+    .content {
+        margin-left: 220px;
+        padding: 80px 40px;
+    }
+    
+    .content h1 {
+        font-size: 38px;
+    }
+    
+    .content p {
+        font-size: 15px;
+        min-width: 300px;
+        line-height: 1.8;
+    }
+    
+    .video {
+        padding: 260px 10px;
+        margin: 190px 150px;
+        width: 40%;
+    }
+    
+    .content .button {
+        width: 40%;
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+    
+    .twitter .mini {
+        padding: 40px 250px;
+    }
+    
+    .twitter .mini h1 {
+        font-size: 38px;
+    }
+    
+    .twitter p {
+        padding: 0px 250px;
+        font-size: 22px;
+        max-width: 1200px;
+    }
+    
+    .grid2 {
+        height: 160vh;
+    }
+    
+    .grid2 .John {
+        margin: 30px 250px;
+    }
+    
+    .grid2 .John h1 {
+        font-size: 38px;
+    }
+    
+    .grid2 .John p {
+        font-size: 18px;
+        max-width: 600px;
+        line-height: 1.8;
+    }
+    
+    .grid2 .John2 {
+        margin: 70px 200px 70px 100px;
+    }
+    
+    .grid2 .John2 p {
+        font-size: 18px;
+        max-width: 500px;
+        line-height: 1.8;
+    }
+    
+    .gall3 {
+        gap: 25px;
+        margin-top: 20px;
+    }
+    
+    .gall3 img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .comillas .mini {
+        padding: 40px 250px;
+    }
+    
+    .comillas .mini h1 {
+        font-size: 38px;
+    }
+    
+    .comillas p {
+        padding: 0px 250px;
+        font-size: 22px;
+        min-width: 200px;
+    }
+    
+    .comillas .cita {
+        font-size: 18px;
+    }
+    
+    .forms {
+        padding: 100px 0px;
+        gap: 40px;
+    }
+    
+    .forms .contact-grid {
+        min-width: 1300px;
+        margin: 0 220px;
+        gap: 80px;
+    }
+    
+    .contact-container h1 {
+        margin-left: 220px;
+        font-size: 38px;
+    }
+    
+    .form-group label {
+        font-size: 16px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 13px 105px;
+        font-size: 18px;
+    }
+    
+    .contact-info {
+        margin-right: 550px;
+    }
+    
+    .contact-info p {
+        font-size: 17px;
+        line-height: 2;
+        width: 40%;
+    }
+    
+    .forms .btn {
+        margin-left: 220px;
+        padding: 25px 50px;
+        font-size: 16px;
+    }
+    
+    .footer {
+        padding: 40px 80px;
+    }
+    
+    .footer a {
+        font-size: 18px;
+    }
+    
+    .footer .dosmil {
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 921px) and (max-width: 1279px) {
+    .header h2 {
+        font-size: 30px;
+    }
+    .nav a {
+        font-size: 19px;
+        padding: 5px 8px;
+    }
+
+    .photo img {
+        width: 25%;
+        height: auto;
+    }
+
+    .photo h2 {
+        font-size: 34px;
+    }
+
+    .photo p {
+        font-size: 17px;
+    }
+
+    .header2 {
+        height: 120vh;
+    }
+
+    .twitter p {
+        font-size: 18px;
+    }
+
+    .video_ {
+        gap: 120px;
+    }
+
+    .video_ .content h1 {
+        width: 300%;
+    }
+
+    .video_ .content p {
+        font-size: 18px;
+        width: 250%;
+    }
+
+    .video_ .content a {
+        width: 150%;
+    }
+
+    .video {
+        width: 30%;
+        margin-top: 200px;
+        margin-right: 150px;
+    }
+
+    .grid2 {
+        height: 150vh;
+    }
+
+    .grid2 .John {
+        margin: 100px 0px 100px 210px;
+        font-size: 12px;
+        width: 200%;
+    }
+
+    .grid2 .John p {
+        font-size: 18px;
+        width: 10%;
+    }
+
+    .grid2 .John p, .grid2 .John2 p {
+        font-size: 18px;
+        width: 100%;
+    }
+    
+    .forms {
+        gap: 30px;
+    }
+
+    .comillas p {
+        width: 60%;
+    }
+
+    .contact-info {
+        margin-right: 180px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+        width: 70%;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 200%;
+    }
+
+    .footer {
+        padding: 30px 4px;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 920px) {
+    .header {
+        justify-content: space-around;
+        padding: 15px 20px;
+    }
+    .header h2 {
+        font-size: 20px;
+    }
+    .nav a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+    .container {
+        padding-top: 60px;
+    }
+
+    .container .fondo h1 {
+        font-size: 28px;
+        padding: 15px 20px;
+    }
+
+    .photo img {
+        width: 45%;
+        height: auto;
+    }
+
+    .photo .coffe {
+        margin-top: 3px;
+        width: 35%;
+    }
+
+    .serious {
+        margin-top: -10px;
+        width: 35%;
+    }
+
+    .frame {
+        margin-top: 10px;
+        width: 35%;
+    }
+
+    .photo h2 {
+        font-size: 32px;
+    }
+
+    .photo p {
+        font-size: 12px;
+        width: 110%;
+    }
+
+    .header2 {
+        height: 70vh;
+    }
+
+    .header3 {
+        gap: 20px;
+    }
+
+    .header3 .logo h1 {
+        font-size: 24px;
+    }
+
+    .gall2 {
+        margin: 25px 100px;
+        gap: 40px;
+    }
+
+    .gall2 img {
+        width: 120%;
+        height: 150px;
+    }
+
+    .video_ {
+        flex-direction: column;
+        gap: -380px;
+    }
+
+    .video_ .content {
+        width: 100%;
+        padding: 20px;
+        width: 80%;
+    }
+
+    .twitter p {
+        font-size: 18px;
+        width: 70%;
+    }
+
+    .grid2 {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .grid2 .John,
+    .grid2 .John2 {
+        margin: 0;
+        padding: 20px 0;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .grid2 .John h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .grid2 .John h1::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .grid2 .John p,
+    .grid2 .John2 p {
+        font-size: 14px;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto 15px;
+        text-align: center;
+    }
+
+    .grid2 .John2 {
+        margin-top: 0;
+    }
+
+    .grid2 .John2 p {
+        margin-top: 0;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .gall3 {
+        justify-content: center;
+        margin-top: 20px;
+        gap: 15px;
+    }
+
+    .gall3 .red {
+        width: 40px;
+        height: 40px;
+    }
+
+    .comillas .mini {
+        padding: 30px 170px;
+    }
+
+    .comillas p {
+        padding: 0px 170px;
+        width: 70%;
+        font-size: 16px;
+    }
+
+    .forms {
+        padding: 50px 0;
+    }
+
+    .forms .contact-grid {
+        grid-template-columns: 1fr;
+        margin: 0 40px;
+        gap: 30px;
+    }
+
+    .contact-container h1 {
+        margin-left: 40px;
+        font-size: 28px;
+    }
+
+    .contact-info {
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+    .forms .btn {
+        margin-left: 40px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /* HEADER */
+    .header {
+        padding: 15px 25px;
+        justify-content: space-between;
+    }
+    .header .logo h2 {
+        font-size: 22px;
+    }
+    .desktop-nav {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+
+    /* HERO */
+    .container {
+        height: 80vh;
+        padding-top: 70px;
+    }
+    .fondo h1 {
+        font-size: 22px;
+        padding: 12px 16px;
+        letter-spacing: 1px;
+    }
+
+    /* SERVICIOS */
+    .gal1 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        padding: 40px 30px;
+        gap: 30px;
+        height: auto;
+    }
+    .photo {
+        align-items: center;
+        text-align: center;
+    }
+    .photo img {
+        width: 70px;
+        height: 70px;
+    }
+    .photo h2 {
+        font-size: 26px;
+    }
+    .photo p {
+        font-size: 13px;
+        line-height: 1.6;
+        max-width: 280px;
+    }
+
+    /* PORTFOLIO */
+    .header2 {
+        height: auto;
+        padding: 30px 0;
+    }
+    .header3 {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 30px;
+    }
+    .header3 .logo h1 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    .header3 .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+    .header3 .nav a {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .gall2 {
+        margin: 20px 30px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .gall2 img {
+        height: 160px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* VIDEO SECTION */
+    .video_ {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    .video_ .content {
+        margin: 0;
+        padding: 20px 0;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .video_ .content h1 {
+        font-size: 28px;
+    }
+    .video_ .content h1::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .video_ .content p {
+        font-size: 14px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .video_ .content .button {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .video {
+        padding: 20px 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    /* TWITTER */
+    .twitter .mini {
+        padding: 30px 30px;
+        flex-direction: row;
+        align-items: center;
+    }
+    .twitter .mini h1 {
+        font-size: 28px;
+    }
+    .twitter p {
+        padding: 0px 30px;
+        font-size: 16px;
+        width: auto;
+        max-width: 100%;
+    }
+
+    /* WHO IS JOHN DOE */
+    .grid2 {
+        flex-direction: column;
+        height: auto;
+        padding: 50px 30px;
+    }
+    .grid2 .John,
+    .grid2 .John2 {
+        margin: 0;
+        padding: 10px 0;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .grid2 .John h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .grid2 .John h1::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .grid2 .John p,
+    .grid2 .John2 p {
+        font-size: 15px;
+        line-height: 1.7;
+        max-width: 550px;
+        margin: 0 auto 15px;
+        text-align: center;
+    }
+    .grid2 .John2 p {
+        margin-top: 0;
+        width: 100%;
+    }
+    .gall3 {
+        justify-content: center;
+        margin-top: 20px;
+        gap: 20px;
+    }
+    .gall3 .red {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* TESTIMONIALS */
+    .comillas .mini {
+        padding: 30px 30px;
+    }
+    .comillas .mini h1 {
+        font-size: 28px;
+    }
+    .comillas p {
+        padding: 0px 30px;
+        font-size: 16px;
+        width: auto;
+        max-width: 100%;
+    }
+    .comillas .cita {
+        font-size: 15px;
+    }
+
+    /* CONTACT FORM */
+    .forms {
+        padding: 60px 0;
+    }
+    .forms .contact-grid {
+        grid-template-columns: 1fr;
+        margin: 0 30px;
+        gap: 30px;
+    }
+    .contact-container h1 {
+        margin-left: 30px;
+        font-size: 28px;
+    }
+    .contact-info {
+        margin-left: 0;
+        padding-top: 0;
+    }
+    .forms .btn {
+        margin-left: 30px;
+        padding: 18px 35px;
+        font-size: 15px;
+    }
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px;
+        text-align: center;
+    }
+    .footer a {
+        font-size: 15px;
+    }
+    .footer .dosmil {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* HEADER */
+    .header {
+        padding: 12px 15px;
+        justify-content: space-between;
+    }
+    .header .logo h2 {
+        font-size: 18px;
+    }
+    .desktop-nav {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+    .menu-button img {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* HERO */
+    .container {
+        height: 70vh;
+        padding-top: 60px;
+    }
+    .fondo h1 {
+        font-size: 16px;
+        padding: 10px 12px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+    }
+
+    /* SERVICIOS */
+    .gal1 {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 30px;
+        height: auto;
+    }
+    .photo {
+        align-items: center;
+        text-align: center;
+    }
+    .photo img {
+        width: 60px;
+        height: 60px;
+    }
+    .photo h2 {
+        font-size: 24px;
+    }
+    .photo p {
+        font-size: 13px;
+        line-height: 1.6;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    /* PORTFOLIO */
+    .header2 {
+        height: auto;
+        padding: 20px 0;
+    }
+    .header3 {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 15px;
+    }
+    .header3 .logo h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .header3 .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+    .header3 .nav a {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+    .gall2 {
+        margin: 15px 15px;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .gall2 img {
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* VIDEO SECTION */
+    .video_ {
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+    .video_ .content {
+        margin: 0;
+        padding: 15px 0;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .video_ .content h1 {
+        font-size: 24px;
+    }
+    .video_ .content h1::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+    }
+    .video_ .content p {
+        font-size: 13px;
+        line-height: 1.6;
+        max-width: 100%;
+        text-align: center;
+    }
+    .video_ .content .button {
+        width: 160px;
+        padding: 10px 15px;
+        font-size: 13px;
+        margin: 0 auto;
+    }
+    .video {
+        padding: 15px 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    /* TWITTER */
+    .twitter .mini {
+        padding: 20px 15px;
+        flex-direction: row;
+        align-items: center;
+    }
+    .twitter .mini h1 {
+        font-size: 24px;
+    }
+    .twitter .mini img {
+        width: 35px;
+        height: 35px;
+    }
+    .twitter p {
+        padding: 0px 15px;
+        font-size: 14px;
+        line-height: 1.6;
+        width: auto;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* WHO IS JOHN DOE */
+    .grid2 {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 15px;
+    }
+    .grid2 .John,
+    .grid2 .John2 {
+        margin: 0;
+        padding: 5px 0;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .grid2 .John h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .grid2 .John h1::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+    }
+    .grid2 .John p,
+    .grid2 .John2 p {
+        font-size: 13px;
+        line-height: 1.7;
+        max-width: 100%;
+        margin: 0 auto 12px;
+        text-align: center;
+        padding: 0 5px;
+    }
+    .grid2 .John2 p {
+        margin-top: 0;
+    }
+    .gall3 {
+        justify-content: center;
+        margin-top: 15px;
+        gap: 12px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .gall3 .red {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* TESTIMONIALS */
+    .comillas .mini {
+        padding: 20px 15px;
+    }
+    .comillas .mini h1 {
+        font-size: 24px;
+    }
+    .comillas .mini img {
+        width: 35px;
+        height: 35px;
+    }
+    .comillas p {
+        padding: 0px 15px;
+        font-size: 14px;
+        line-height: 1.6;
+        width: auto;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .comillas .cita {
+        font-size: 13px;
+    }
+
+    /* CONTACT FORM */
+    .forms {
+        padding: 40px 0;
+    }
+    .forms .contact-grid {
+        grid-template-columns: 1fr;
+        margin: 0 15px;
+        gap: 20px;
+    }
+    .contact-container h1 {
+        margin-left: 15px;
+        font-size: 24px;
+    }
+    .contact-container h1::after {
+        width: 60px;
+        bottom: -8px;
+    }
+    .form-group label {
+        font-size: 12px;
+    }
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .contact-info {
+        margin-left: 0;
+        padding-top: 0;
+    }
+    .contact-info p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+    .forms .btn {
+        margin-left: 15px;
+        padding: 15px 25px;
+        font-size: 14px;
+    }
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+    .footer a {
+        font-size: 13px;
+        margin: 0 3px;
+    }
+    .footer .dosmil {
+        font-size: 13px;
+    }
+}
+
+/* MENÚ RESPONSIVE */
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-button img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(59, 64, 70, 0.95);
+    display: flex;
+    flex-direction: column;
+    transition: right 0.3s ease-in-out;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    align-self: flex-end;
+}
+
+.close-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.mobile-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.3s;
+}
+
+.mobile-nav a:hover {
+    background-color: #00bcd4;
+    padding-left: 30px;
+}
+
+/* Media Query del menú Responsive */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none ;
+    }
+    
+    .menu-button {
+        display: block;
+    }
+    
+    .header {
+        justify-content: space-around;
+        
+        padding: 15px 20px;
+    }
+    
+    .header .logo h2 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .sidebar {
+        display: none ;
+    }
+    
+    .menu-button {
+        display: none ;
+    }
+    
+    .desktop-nav {
+        display: flex ;
+    }
+}
