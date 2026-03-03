@@ -1,106 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blueasy</title>
-<link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>Blueasy</title>
 </head>
 <body>
+    <header class="header">
+        <div class="logo">
+            <h2>Blu<b>e</b>asy</h2>
+        </div>
+        
+        <!-- Menú para desktop -->
+        <nav class="nav desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Features</a>
+            <a href="#">Portafolio</a>
+            <a href="#">Contact</a>
+        </nav>
+        
+        <!-- Botón hamburguesa para móvil -->
+        <button class="menu-button" onclick="toggleMenu()">
+            <img src="Assets/images/menu.png" alt="menu">
+        </button>
+        
+        <!-- Sidebar para móvil -->
+        <div class="sidebar" id="sidebar">
+            <button class="close-button" onclick="toggleMenu()">
+                <img src="Assets/images/x.png" alt="close">
+            </button>
+            <nav class="mobile-nav">
+                <a href="index.html">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Features</a>
+                <a href="#">Portafolio</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-<!-- NAV -->
-<header class="nav">
-  <div class="container nav-grid">
-    <h1 class="logo">BLUE<span>ASY</span></h1>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>Services</li>
-        <li>Features</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <section class="container">
+        <article class="fondo">
+            <h1>"I'M LOOKING FOR THE UNEXPECTED."</h1>
+        </article>
+        <article class="fondo">
+            <h1>"I'M LOOKING FOR THINGS I'VE NEVER SEEN BEFORE."</h1>
+        </article>
+    </section>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-text">
-    <h2>“I’M LOOKING FOR THE UNEXPECTED.<br>I’M LOOKING FOR THINGS I’VE NEVER SEEN BEFORE.”</h2>
-  </div>
-</section>
+    <section class="gal1">
+        <article class="photo">
+            <img src="Assets/images/coffee.png" class="coffe">
+            <h2>Coffee</h2>
+            <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw, 
+                Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.
+            </p>
+        </article>
+        <article class="photo">
+            <img src="Assets/images/instant.png">
+            <h2>Instant</h2>
+            <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw, 
+                Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.
+            </p>
+        </article>
+        <article class="photo">
+            <img src="Assets/images/serious.png" class="serious">
+            <h2>Serious</h2>
+            <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw, 
+                Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.
+            </p>
+        </article>
+        <article class="photo">
+            <img src="Assets/images/frame.png" class="frame">
+            <h2>Frame</h2>
+            <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw, 
+                Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.
+            </p>
+        </article>
+    </section>
 
-<!-- SERVICES -->
-<section class="services container">
-  <div class="services-grid">
-    <div class="service">Coffee</div>
-    <div class="service">Instant</div>
-    <div class="service">Serious</div>
-    <div class="service">Frame</div>
-  </div>
-</section>
+    <div class="header2">
+        <div class="header3">
+            <div class="logo">
+                <h1>Portafolio</h1>
+            </div>
+            <nav class="nav">
+                <a href="#">All</a>
+                <a href="#">Panoramas</a>
+                <a href="#">Portraits</a>
+                <a href="#">Macro</a>
+                <a href="#">Journal</a>
+            </nav>
+        </div>
 
-<!-- PORTFOLIO -->
-<section class="portfolio container">
-  <h3>Portfolio</h3>
-  <div class="portfolio-grid">
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-  </div>
-</section>
-
-<!-- DEFAULT SECTION -->
-<section class="default">
-  <div class="container default-grid">
-    <div>
-      <h3>Just Default Section</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-      <button>Visit me</button>
+        <div class="gall2">
+            <img src="Assets/images/photo01.png">
+            <img src="Assets/images/photo02.png">
+            <img src="Assets/images/photo03.png">
+            <img src="Assets/images/photo04.png">
+            <img src="Assets/images/photo05.png">
+            <img src="Assets/images/photo06.png">
+            <img src="Assets/images/photo07.png">  
+            <img src="Assets/images/photo08.png">         
+        </div>
     </div>
-    <div class="video"></div>
-  </div>
-</section>
 
-<!-- ABOUT -->
-<section class="about">
-  <div class="container about-grid">
-    <div>
-      <h3>Who is John Doe?</h3>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </div>
-  </div>
-</section>
+    <section class="video_">
+        <article class="content">
+            <h1>Just Default Section</h1>
+            <p>
+                Bear claw marzipan bear claw applicake I love muffin. Lemon drops gumr bears pastry gummi 
+                bears sesame snaps I love unerdwear.com. Soufflé 
+                cotton candy dessert candy ice cream wafer gummies cheesecake browni.
+            </p>
 
-<!-- TESTIMONIAL -->
-<section class="testimonial container">
-  <p>Applicake chocolate cake wafer toffee pie soufflé wafer.</p>
-</section>
+            <p>
+                Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate 
+                cake I love pudding. Ice cream I love powder pudding apple pie 
+                marshmallow. Cupcake marzipan oat cake bonbon I love candy canes toffee.
+            </p>
+            <a class="button" href="#"><h3>Visit me</h3></a>
+        </article>
+        <img src="Assets/images/VimeoVideo.png" class="video">
+    </section>
 
-<!-- CONTACT -->
-<section class="contact">
-  <div class="container contact-grid">
-    <form>
-      <input placeholder="Full name">
-      <input placeholder="Email">
-      <textarea placeholder="Message"></textarea>
-      <button>Message</button>
-    </form>
-    <div>
-      <p>Contact info her</p>
-    </div>
-  </div>
-</section>
+    <section class="twitter">
+        <article class="mini">
+            <h1>Twitter</h1>
+            <img src="Assets/images/icon-twitter.png" class="twitterIcon">
+        </article>
+        <p>Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate oat cake</p>
+        <p><b>@cheesecake</b> tootsie roll</p>
+    </section>
 
-<footer class="footer">
-  <p>2025 ©</p>
-</footer>
+    <section class="grid2">
+        <article class="John">
+            <h1>Who is John Doe?</h1>
+            <p>Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi 
+                bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream 
+                wafer gummies cheesecake brownie.
+            </p>
+            <p>Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I love pudding.
+                Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat cake bonbon I 
+                love candy canes toffee.
+            </p>
+        </article>
+        <article class="John2">
+            <p class="J">Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake. Sesame snaps 
+                sugar plum cotton candy chocolate bonbon lemon drops candy canes cotton candy. Cake 
+                toffee pie bear claw pastry.
+            </p>
+            <div class="gall3">
+                <a href="#"><img src="Assets/images/icon-twitterF.png" class="red"></a>
+                <a href="#"><img src="Assets/images/icon-google-plusF.png" class="red"></a>
+                <a href="#"><img src="Assets/images/icon-dribbbleF.png" class="red"></a>
+                <a href="#"><img src="Assets/images/icon-coffeeF.png" class="red"></a>
+            </div>
+        </article>
+    </section>
 
+    <section class="comillas">
+        <article class="mini">
+            <h1>Testimonials</h1>
+            <img src="Assets/images/Captura.JPG" class="ComillasIcon">
+        </article>
+        <p>Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.</p>
+        <p class="cita">-Walter White</p>
+    </section>
+
+    <section class="forms">
+        <div class="contact-container">
+            <h1>CONTACT</h1>
+            
+            <div class="contact-grid">
+                <!-- Columna izquierda: formulario -->
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label>FULL NAME</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>EMAIL</label>
+                        <input type="email" placeholder="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>MESSAGE</label>
+                        <textarea rows="6"></textarea>
+                    </div>
+                </div>
+
+            <!-- Columna derecha: información de contacto -->
+            <div class="contact-info">
+                <p>Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.</p>
+                
+                <p>Linda Newman<br>
+                W325 State Road 123<br>
+                Mondovi, WI(Wisconsin) 98746-54321<br>
+                (715) 946 - 1234</p>
+            </div>
+        </div>
+        <a href="#" class="btn">MESSAGE</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer_info">
+            <a href="#">Home |</a>
+            <a href="#"> Services |</a>
+            <a href="#"> Portafolio |</a>
+            <a href="#"> Contact</a>
+        </div>
+
+        <div class="dosmil">
+            <p>2013 ©</p>
+        </div>
+    </footer>
+
+    <script>
+    function toggleMenu() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('active');
+        
+        // Previene scroll del body cuando el menú está abierto
+        if (sidebar.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    }
+
+    // Cierra menú al hacer click en un enlace
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileLinks = document.querySelectorAll('.mobile-nav a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                toggleMenu();
+            });
+        });
+        
+        // Cierra menú al hacer click fuera (opcional)
+        const sidebar = document.getElementById('sidebar');
+        sidebar.addEventListener('click', function(e) {
+            if (e.target === sidebar) {
+                toggleMenu();
+            }
+        });
+    });
+</script>
 </body>
 </html>

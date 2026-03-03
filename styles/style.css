@@ -718,9 +718,9 @@ html, body {
     }
     
     .comillas p {
-        padding: 0px 250px;
+        padding: 0px 0px 0px 250px;
         font-size: 22px;
-        min-width: 200px;
+        width: 80%;
     }
     
     .comillas .cita {
@@ -837,13 +837,13 @@ html, body {
     }
 
     .grid2 {
-        height: 150vh;
+        height: 200vh;
     }
 
     .grid2 .John {
         margin: 100px 0px 100px 210px;
         font-size: 12px;
-        width: 200%;
+        width: 300%;
     }
 
     .grid2 .John p {
@@ -870,12 +870,12 @@ html, body {
 
     .contact-info p {
         font-size: 16px;
-        width: 70%;
+        width: 50%;
     }
 
     .form-group input,
     .form-group textarea {
-        width: 200%;
+        width: 400%;
     }
 
     .footer {
@@ -883,7 +883,7 @@ html, body {
     }
 }
 
-@media (min-width: 760px) and (max-width: 920px) {
+@media (min-width: 769px) and (max-width: 920px) {
     .header {
         justify-content: space-around;
         padding: 15px 20px;
@@ -1663,7 +1663,6 @@ html, body {
     
     .header {
         justify-content: space-around;
-        
         padding: 15px 20px;
     }
     
